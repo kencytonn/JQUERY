@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script
+            src="test.js">
+    </script>
+</head>
+
+<body>
+
+<div style="width: 90%; margin: auto">
+    <table id="tabledata" class="test_table table table-bordered table-striped">
+        <caption style="position: relative">Young Leaders Details</caption>
+        <thead>
+        <tr>
+            <th>Row</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Edit/Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Kennedy</td>
+            <td>Wambua</td>
+            <td>kenwambua@mail.com</td>
+            <td>
+                <button class="editbtn btn btn-info" onclick="rowEdit(this)">Edit</button>
+                <button class="deletebutton btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peter</td>
+            <td>Polle</td>
+            <td>peterpolle@mail.com</td>
+            <td>
+                <button class="editbtn btn btn-info" onclick="rowEdit(this)">Edit</button>
+                <button class="deletebutton btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Charity</td>
+            <td>Zablon</td>
+            <td>CharityZablon@mail.com</td>
+            <td>
+                <button class="editbtn btn btn-info" onclick="rowEdit(this)">Edit</button>
+                <button class=" deletebutton btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <button class="addbtn btn btn-default">Add</button>
+    </div>
+</div>
+
+
+</body>
+
+</html>
