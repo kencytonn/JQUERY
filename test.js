@@ -12,7 +12,16 @@ $(document).ready(function () {
 
 
 });
-function rowEdit(data) {
-    $(data).parent().parent().attr("contenteditable", true);
 
+function rowEdit(data) {
+    var button_value = $(data).text();
+    var edit_row=$(data).parent().parent().children("td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4)");
+    if (button_value == "Edit") {
+        edit_row.attr("contenteditable", true);
+        $(data).text("Stop Edit");
+    }
+    else {
+        edit_row.attr("contenteditable", false);
+        $(data).text("Edit");
+    }
 }
